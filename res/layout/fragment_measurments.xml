@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tylor" >
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_shirtMeasurement"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_OneByfour"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_half"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_threeByFour"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_SmIn"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_LBT"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_Down"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_comma"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_leftbracket"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@color/Color_Black"
+                android:onClick="extraBtnclick"
+                android:text="@string/button_Measurement_rightbracket"
+                android:textColor="@color/Color_White"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editText_shirtMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HorizontalScrollView1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_margin="3dp"
+        android:background="@drawable/adress"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textWebEditText|textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/Color_Black"
+        android:textColorLink="@color/Color_Black"
+        android:textStyle="normal" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

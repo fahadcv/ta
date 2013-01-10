@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Color_lightBlue">#33B5E5</color>
+    <color name="Color_darkBlue">#0099CC</color>
+    <color name="Color_darkViolet">#9933CC</color>
+    <color name="Color_darkGreen">#669900</color>
+    <color name="Color_darkRed">#CC0000</color>
+    <color name="Color_White">#FFFFFF</color>
+    <color name="Color_Black">#000000</color>
+    <color name="Color_skyBlue">#87CEEB</color>
+    <color name="Color_Blue">#0000FF</color>
+    <color name="Color_steelBlue">#4684B4</color>
+    <color name="Color_violet">#EE82EE</color>
+    <color name="Color_lightGray">#D3D3D3</color>
+    <color name="Color_Gray">#BEBEBE</color>
+    <color name="Color_lightSkyBlue">#BEBEBE</color>
+    <color name="Color_lightSteelBlue">#B0C4DE</color>
+    <color name="Color_cyn">#e0ffff</color>
+    
+</resources>

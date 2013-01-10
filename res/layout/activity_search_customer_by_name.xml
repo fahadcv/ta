@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/textView_searchCust_Name_Header"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/Color_darkGreen"    />
+	
+    <ListView
+        android:id="@+id/listView_searchCust_Name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>

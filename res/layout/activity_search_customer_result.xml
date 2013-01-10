@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"    
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"     
+    android:background="@drawable/ic_bg"
+    android:gravity="top"  
+    android:orientation="vertical" >
+    
+    <TextView 
+    	    android:id="@+id/textView_serchResult_header"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:textColor="@color/Color_darkGreen"
+	        android:layout_margin="2dp" 
+	        android:text="@string/textView_serchResult_header"
+	        android:ems="10"  
+	        android:textStyle="bold" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/Color_steelBlue"
+    	android:layout_marginTop="5dp"
+    	android:layout_marginBottom="10dp"
+    	android:layout_marginLeft="2dp"
+    	android:layout_marginRight="2dp"
+    	android:orientation="vertical"
+    	android:gravity="left">
+    	
+   	<TextView 
+        android:id="@+id/textView_serchResult_CustDetails"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:textColor="@color/Color_White"
+        android:layout_margin="1dp" 	
+        android:typeface="serif"        
+        android:ems="15" />         
+        
+    </LinearLayout>
+    
+	<TextView 
+   	    android:id="@+id/textView_serchResult_shirtTitle"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:textColor="@color/Color_darkGreen"
+        android:layout_margin="1dp" 
+        android:text="@string/textView_serchResult_shirtTitle"
+        android:ems="10"  
+        android:textStyle="bold" />
+	
+    <EditText
+        android:id="@+id/editText_serchResult_ShirtDetails"        
+        android:layout_width="match_parent"
+        android:layout_height="70dp"         
+    	android:layout_margin="3dp"        
+        android:ems="8"        
+        android:textColor="@color/Color_White"
+        android:imeOptions="actionDone" 
+        android:inputType="number|textPostalAddress"
+        android:enabled="false"
+        android:onClick="clearMeasurement" />
+   
+    
+    <TextView 
+   	    android:id="@+id/textView_serchResult_pantTitle"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:textColor="@color/Color_darkGreen"
+        android:layout_margin="1dp" 
+        android:text="@string/textView_serchResult_pantTitle"
+        android:ems="10"   
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/editText_serchResult_PantDetails"        
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="3dp"      
+        android:ems="8"
+        android:textColor="@color/Color_White"
+        android:imeOptions="actionDone"
+        android:inputType="number|textPostalAddress" 
+        android:enabled="false"
+        android:onClick="clearMeasurement" />                
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_SearchResult_Edit"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp" 
+            android:background="@color/Color_steelBlue"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:text="@string/btnTxt_SearchResult_Edit" />      
+        
+
+        <Button
+            android:id="@+id/btn_SearchResult_Delete"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:background="@color/Color_steelBlue"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:text="@string/btnTxt_SearchResult_Delete" />
+
+        <Button
+            android:id="@+id/btn_SearchResult_Home"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"
+            android:background="@color/Color_steelBlue"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:text="@string/btnTxt_SearchResult_Home"
+            android:onClick="goHome" />
+        
+         <Button
+            android:id="@+id/btn_SearchResult_Cancel"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"         
+            android:background="@color/Color_steelBlue"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:text="@string/btnTxt_SearchResult_Cancel"  
+            android:visibility="invisible"           
+            android:onClick="cancelEit" />
+        
+        <Button
+            android:id="@+id/btn_SearchResult_Save"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="3dp"           
+            android:background="@color/Color_steelBlue"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:visibility="invisible" 
+            android:text="@string/btnTxt_SearchResult_Save" />        
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="614dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ic_bg"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/checkBox_shirt"
+            android:layout_width="601dp"
+            android:layout_height="wrap_content"
+            android:background="@color/Color_Black"
+            android:text="@string/checkBox_addMeasurement_shirt"
+            android:textColor="@color/Color_darkGreen"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_shirtMeasurement"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="3dp"
+            android:layout_weight="0.09"
+            android:ems="10"
+            android:background="@drawable/adress"
+            android:hint="@string/editText_shirtMeasurement"
+            android:imeOptions="actionDone"
+            android:inputType="textWebEditText|textMultiLine"
+            android:textColor="@color/Color_White"
+			android:onClick="editTextClicked"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_pant"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Color_Black"
+            android:text="@string/checkBox_addMeasurement_pant"
+            android:textColor="@color/Color_darkGreen"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_pantMeasurement"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="@string/editText_pantMeasurement"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine|textWebEditText"            
+            android:textColor="@color/Color_White" 
+            android:onClick="editTextClicked"/>
+
+        <Button
+            android:id="@+id/button_addMeasurementSave"
+            style="@style/ButtonStyle"
+            android:layout_width="263dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="addCustomerDetails"
+            android:text="@string/button_addMeasurementSave" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/Color_steelBlue"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_OneByfour"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textStyle="bold"
+            android:background="@color/Color_Black"
+            android:textColor="@color/Color_White"
+            android:text="@string/button_Measurement_half"
+            android:onClick="extraBtnclick" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_threeByFour"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+        
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_SmIn"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+
+        <Button
+            android:id="@+id/button5"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_LBT"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold" 
+            android:onClick="extraBtnclick"/>
+
+        <Button
+            android:id="@+id/button6"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_Down"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+        <Button
+            android:id="@+id/button7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_comma"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+        
+        <Button
+            android:id="@+id/button8"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_leftbracket"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+        
+        <Button
+            android:id="@+id/button9"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/Color_Black"
+            android:text="@string/button_Measurement_rightbracket"
+            android:textColor="@color/Color_White"
+            android:textStyle="bold"
+            android:onClick="extraBtnclick" />
+
+    </LinearLayout>
+
+</LinearLayout>

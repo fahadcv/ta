@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center|center_vertical"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/editText_name"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:textColor="@color/Color_White"
+        android:hint="@string/text_newCustHome_name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_mobileNumber"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:textColor="@color/Color_White"
+        android:hint="@string/text_newCustHome_mobile"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_address"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:ems="10"
+        android:textColor="@color/Color_White"
+        android:hint="@string/text_newCustHome_address"
+        android:inputType="textPostalAddress" />
+
+    <Button
+        android:id="@+id/button_addMeasurement"
+        style="@style/ButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:text="@string/button_newCustHomeAddMeasurement" />
+
+</LinearLayout>

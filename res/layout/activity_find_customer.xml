@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_bg"
+    style="@style/AppTheme"
+    android:gravity="top"
+    android:orientation="vertical" >
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/textView_SearchBy_title"
+        android:textSize="15dp"
+        android:textColor="@color/Color_darkGreen" />
+   
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/Color_steelBlue"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/textView_searchByName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.85"
+            android:background="@color/Color_Black"
+            android:hint="@string/textView_searchByName_hintText" 
+            android:inputType="textPersonName"
+            android:imeOptions="actionDone"            
+            android:textColor="@color/Color_White"
+            android:onClick="clearText"/>
+
+        <ImageButton
+            android:id="@+id/button_searchByName" 
+            style="@style/ButtonStyle"           
+            android:background="@color/Color_Black"
+            android:contentDescription="@string/SearchButtonContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0.15"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/textView_OR_Text"
+        android:textSize="15dp"
+        android:textColor="@color/Color_darkGreen"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"        
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/Color_steelBlue"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/textView_searchById"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"            
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.85"
+            android:background="@color/Color_Black"
+            android:hint="@string/textView_searchById_hintText" 
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:textColor="@color/Color_White"
+            android:onClick="clearText"/>
+
+        <ImageButton
+            android:id="@+id/button_searchById"
+            style="@style/ButtonStyle"
+            android:background="@color/Color_Black"
+            android:contentDescription="@string/SearchButtonContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0.15"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+    
+    
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="@string/textView_OR_Text"
+        android:textSize="15dp"
+        android:textColor="@color/Color_darkGreen" />
+        
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/Color_steelBlue"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/textView_searchByMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.85"
+            android:background="@color/Color_Black"
+            android:hint="@string/textView_searchByMobile_hintText" 
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            android:textColor="@color/Color_White"
+            android:onClick="clearText"/>
+        
+
+        <ImageButton
+            android:id="@+id/button_searchByMobile"
+            style="@style/ButtonStyle"
+            android:background="@color/Color_Black"
+            android:contentDescription="@string/SearchButtonContentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="0.15"
+            android:src="@drawable/ic_action_search" />
+    </LinearLayout>
+    
+</LinearLayout>

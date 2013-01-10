@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/ic_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="top"
+	    android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:id="@+id/imageButton1"          
+            android:layout_width="match_parent"            
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mainPage_contentDesc_addCustomer"
+            android:src="@drawable/ic_logo_new" />
+    
+    </LinearLayout>
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="30dp"
+	     android:gravity="center" >  
+           
+		    <ImageButton
+		        android:id="@+id/button_newCust"
+		        style="@style/ButtonStyle1"
+		        android:onClick="newCustHome"
+		        android:src="@drawable/ic_new"
+		        android:contentDescription="@string/mainPage_contentDesc_addCustomer"
+		        android:text="@string/text_buttonNewCust" />
+		    <ImageButton
+		        android:id="@+id/find_cust"
+		        style="@style/ButtonStyle1"
+		        android:onClick="findCustomer"
+		        android:contentDescription="@string/mainPage_contentDesc_findCustomer"
+		        android:src="@drawable/ic_find"
+		        android:text="@string/text_buttonFindCust" />
+		
+		    <ImageButton
+		        android:id="@+id/viewAll_cust"
+		        style="@style/ButtonStyle1"
+		        android:layout_height="wrap_content"
+		        android:onClick="newCustHome"
+		        android:contentDescription="@string/mainPage_contentDesc_viewAllCustomers"
+		        android:src="@drawable/ic_view_all"
+		        android:text="@string/text_buttonviewAll" />
+	</LinearLayout> 
+
+</LinearLayout>

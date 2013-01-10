@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:background">#33B5E5</item>
+     </style>
+    
+    <style name="ButtonStyle1" parent="android:style/DeviceDefault.ButtonBar">               
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>    
+   	</style>
+    
+     <style name="ButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/Color_steelBlue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Large</item>
+    </style>
+    
+    <style name="ButtonStyle3" parent="android:style/Widget.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/Color_darkRed</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+    </style>   
+     
+
+</resources>
