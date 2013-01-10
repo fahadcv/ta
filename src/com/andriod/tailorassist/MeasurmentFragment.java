@@ -19,7 +19,10 @@ public class MeasurmentFragment extends Fragment {
 	 @Override
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 	        // Inflate the layout for this fragment
-	        return inflater.inflate(R.layout.fragment_measurments, container, false);
+		 View view = inflater.inflate(R.layout.fragment_measurments, container, false);
+		 EditText measurementField = (EditText)view.findViewById(R.id.editText_shirtMeasurement);
+		 measurementField.setHint(caption);
+	        return view;
 	    }
 	public String getCaption() {
 		return caption;
