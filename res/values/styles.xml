@@ -1,8 +1,15 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar" />
 
-    <style name="AppTheme" parent="android:style/Theme.Holo.NoActionBar.Fullscreen">
-        <item name="android:background">#33B5E5</item>
-     </style>
+    <style name="ActionBar.Light" parent="@style/ActionBar">
+        <item name="android:background">@drawable/bg_topbar</item>
+	</style>
+
+   <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/ActionBar.Light</item>
+        <item name="android:windowActionBarOverlay">true</item>        
+    </style>
     
     <style name="ButtonStyle1" parent="android:style/DeviceDefault.ButtonBar">               
         <item name="android:layout_width">wrap_content</item>

@@ -1,5 +1,4 @@
 <resources>
-
     <string name="app_name">Matrix</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Matrix</string>
@@ -15,8 +14,9 @@
     <string name="checkBox_addMeasurement_shirt">\t Shirt</string>
     <string name="checkBox_addMeasurement_pant">\t Trouser</string>
     <string name="editText_shirtMeasurement">Shirt details</string>
+    <string name="editText_measurement">\t\t enter measurements here..</string>
     <string name="editText_pantMeasurement">Trouser details</string>
-    <string name="button_addMeasurementSave">Save details</string>
+    <string name="button_addMeasurementSave">Save</string>
     <string name="title_activity_measurements">Measurements</string>
     <string name="title_activity_show_customer_details">ShowCustomerDetails</string>
     <string name="button_showCustDetails_ok"> Home</string>
@@ -61,7 +61,7 @@
     <string name="button_Measurement_threeByFour">&#190;</string>
     <string name="button_Measurement_SmIn">Sm In</string>
     <string name="button_Measurement_LBT">LBT</string>
-    <string name="button_Measurement_Down">Down</string>
+    <string name="button_Measurement_SmOut">Sm Out</string>
     <string name="button_Measurement_comma">,</string>
     <string name="button_Measurement_leftbracket">(</string>
     <string name="button_Measurement_rightbracket">)</string>

@@ -16,12 +16,13 @@ public class MeasurmentFragment extends Fragment {
 //    	measurementField = (EditText)getView().findViewById(R.id.editText_shirtMeasurement);
 //    	measurementField.setHint(caption);
 	}
-	 @Override
+
+	@Override
 	    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 	        // Inflate the layout for this fragment
 		 View view = inflater.inflate(R.layout.fragment_measurments, container, false);
-		 EditText measurementField = (EditText)view.findViewById(R.id.editText_shirtMeasurement);
-		 measurementField.setHint(caption);
+		 /*EditText measurementField = (EditText)view.findViewById(R.id.editText_shirtMeasurement);
+		 measurementField.setHint(caption);*/    
 	        return view;
 	    }
 	public String getCaption() {
@@ -30,6 +31,13 @@ public class MeasurmentFragment extends Fragment {
 	public void setCaption(String caption) {
 		this.caption = caption;
 	}
-	 
+	public String getMeasurement(){
+		View v = this.getView();
+		String measurement = null;		
+		EditText measurementField = (EditText)v.findViewById(R.id.editText_measurement);
+		measurement = measurementField.getText().toString();
+		return measurement;	
+		
+	} 
 	
 }
