@@ -28,7 +28,7 @@
             android:layout_margin="3dp"
             android:layout_weight="0.09"
             android:ems="10"
-            android:background="@drawable/adress"
+            android:background="@drawable/bg_edittext_large"
             android:hint="@string/editText_shirtMeasurement"
             android:imeOptions="actionDone"
             android:inputType="textWebEditText|textMultiLine"
@@ -144,7 +144,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="2dp"
             android:background="@color/Color_Black"
-            android:text="@string/button_Measurement_Down"
+            android:text="@string/button_Measurement_SmOut"
             android:textColor="@color/Color_White"
             android:textStyle="bold"
             android:onClick="extraBtnclick" />
